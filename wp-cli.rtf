@@ -1,0 +1,94 @@
+https://developer.wordpress.org/cli/commands/
+
+przykladowe zastosowanie 
+
+tworzenie menu:
+wp menu create nazwa_menu
+
+regenerowanie obrazkow mediow
+# Re-generate all thumbnails, without confirmation.
+$ wp media regenerate --yes
+
+zarzadzeni opcjami
+np. pobierz sceizke url (jest to parametr opcji wp)
+wp option get siteurl
+
+tworzeni zarzadzzanie postami:
+https://developer.wordpress.org/cli/commands/post/
+
+tworzenie posta:
+uwaga!!! stosuj cudzysłow zamiast apostrofów!!!
+utworzy szkic draft posta  o podanym tytule
+wp post create --post_type=post --post_title="A sample post"
+
+pokazanie wszytskich atrybutow uzycia
+wp post 
+lub wp post help
+
+edycja contentu posta
+spowoduje otwarecie piku textowego- po wpisaniutresci i zapisaniuu izamkniecu pliku zapisze sie tresc posta w db
+123 jako przykladowy id posta
+wp post edit 123
+
+usuwanie posta(z pomienieciem kosza)123 jako id posta
+wp post delete 123 --force
+
+listing sidebarow
+wp sidebar list --fields=name,id --format=csv name,id
+
+zarzadznie  siecia witryn 
+wp site
+szybkie stworzenie nowej witryny w sieci witryn
+wp site create --slug=example
+
+zarzadzanie taxonomiami
+wp term
+tworzenie nowej kategorii
+wp term create category Apple --description="A type of fruit"
+
+zarzadzanie motywami
+wp theme
+
+listing 
+wp theme list
+
+wyszukiwanie  motywow o przykladowej tematyce 
+wp theme search photo --per-page=6
+
+zarzadznie user'ami
+wp user
+tworzenie usera
+uwaga uteorzy sie od razu haslo ktore trzeba skopiowac!!!
+wp user create bob bob@example.com --role=author
+
+zarzadznei widgetami
+wp widget
+dodawanie widgetu do strfy widgetow - sidebara 
+
+sidebar-1 -id sidebara
+2 pozycja widgetu
+tytul widgetu
+wp widget add calendar sidebar-1 2 --title="Calendar"
+
+zarzadzanie pluginami
+https://developer.wordpress.org/cli/commands/plugin/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
